@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+        >
+
+    <me.yannchou.demo.fadetitledemo.ParallaxScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/image_girl_bg"
+                    android:scaleType="centerCrop"
+                    />
+
+            <LinearLayout
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text="\nThis is the content.If you swipe the scrollView,you can see the fade title bar.If the scrollView scrolls to the top and you continue swipe down,you can see the scaled imageView!"
+                        />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/black"
+                        android:text="\nLet's fill some images:"
+                        />
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_girl"
+                    android:scaleType="centerInside"
+                    />
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/image_girl_01"
+                    />
+
+        </LinearLayout>
+    </me.yannchou.demo.fadetitledemo.ParallaxScrollView>
+
+    <LinearLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/home_title"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            >
+
+        <TextView
+                android:text="Parallax Demo"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+    </LinearLayout>
+</RelativeLayout>
